@@ -1,0 +1,21 @@
+
+dl {
+  margin: 10px;
+}
+
+dl.button-area {
+  padding-right: 20px;
+  text-align: right;
+}
+
+dt {
+  width: 120px;
+  float: left;
+  font-weight: bold;
+}
+
+input, textarea {
+  border: 1px solid #bbbbbb;
+  font-size: 12px;
+}
+

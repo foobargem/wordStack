@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title><%= (yield :title) || "wordStack" %></title>
+	<%= stylesheet_link_tag "style", "form" %>
+	<%= yield :stylesheets %>
+	<%= javascript_include_tag :defaults %>
+	<%= yield :javascripts %>
+</head>
+<body>
+  <div class="main">
+    <div id="header">
+      <div class="name">wordStack</div>
+      <div class="slogan">영어단어를 머리속에 쌓자!!</div>
+
+      <div id="menu_nav">
+        <%= link_to "단어등록", new_english_word_path %>
+        <%= link_to "단어목록", english_words_path %>
+      </div>
+    </div>
+    <%= yield %>
+  </div>
+</body>
+</html>

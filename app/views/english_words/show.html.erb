@@ -1,0 +1,11 @@
+<fieldset>
+  <legend>단어</legend>
+  <dl>
+    <h3> <%= @english_word.word %> </h3>
+    <p> <%= @english_word.description %> </p>
+  </dl>
+  <dl class="button-area">
+    <%= link_to "목록", english_words_path %>
+    <%= link_to "수정", edit_english_word_path(@english_word) %>
+  </dl>
+</fieldset>

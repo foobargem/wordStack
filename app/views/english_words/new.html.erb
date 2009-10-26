@@ -1,0 +1,16 @@
+<% form_for @english_word do |f| %>
+  <fieldset>
+    <legend>단어등록</legend>
+    <dl>
+      <%= f.error_messages %>
+      <%= render :partial => "english_words/form", :locals => { :f => f } %>
+    </dl>
+    <dl class="button-area">
+      <%= f.submit "등록" %>
+    </dl>
+  </fieldset>
+<% end %>
+
+<script type="text/javascript">
+  $('english_word_word').focus();
+</script>

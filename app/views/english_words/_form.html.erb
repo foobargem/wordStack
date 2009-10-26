@@ -1,0 +1,11 @@
+    <%= f.error_messages %>
+
+    <dt> <%= f.label :word %> </dt>
+    <dd> <%= f.text_field :word %> </dd>
+
+    <dt> <%= f.label :kind %> </dt>
+    <dd> <%= f.select :kind, [["동사", "verb"], ["명사", "noun"], ["형용사/부사", "adjective_adverb"]], {} %> </dd>
+
+    <dt> <%= f.label :description %> </dt>
+    <dd> <%= f.text_area :description, :rows => 8, :cols => 40 %> </dd>
+

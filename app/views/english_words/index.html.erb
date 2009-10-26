@@ -1,0 +1,22 @@
+
+<div>
+  <table>
+    <tr>
+      <col width="5%"></col>
+      <col width="15%"></col>
+      <col width="*"></col>
+    </tr>
+    <tr>
+      <th>타입</th>
+      <th>단어</th>
+      <th>설명</th>
+    </tr>
+<% @english_words.each do |word| %>
+    <tr>
+      <td> <%= word.kind_text %> </td>
+      <td> <%= link_to word.word, english_word_path(word) %> </td>
+      <td> <%= word.description %> </td>
+    </tr>
+<% end %>
+  </table>
+</div>
